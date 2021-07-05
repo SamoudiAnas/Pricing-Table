@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    
+    background:url(images/bg.webp);
+    position: relative;
+}
+section{
+    width: 100%;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.price-tag{
+    
+    width :300px;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 20px 15px rgba(0,0,0,0.1);
+   
+}
+
+
+.first{
+    order: 1;
+}
+.middle{
+    width: 350px;
+    order: 2;
+}
+.last{
+    order: 3;
+}
+.middle::before{
+    content: "POPULAR";
+    background-color: #EF476F;
+    color: white;
+    font-weight: 500;
+    font-size: .6em;
+    padding: 2px 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+}
+
+.space{
+    min-width: 2%;
+}
+.monthly{
+    color: #EF476F;
+    font-size: .8em;
+
+}
+.support{
+    font-weight: 700;
+    color: #031A6B;
+    margin: 2% 0;
+    font-size: .8em;
+}
+.feature{
+    font-weight:400;
+    
+
+}
+
+.pack{
+    font-weight: 600;
+    color: #EF476F;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 15% 0 5% 0;
+}
+.price{
+    font-weight: 500;
+    font-size: 3rem;
+    color:#031A6B;
+    position: relative;
+}
+.price::before{
+    content: '$';
+    position: absolute;
+    font-size: 2rem;
+    top:-20%;
+    left: -20%;
+}
+
+.description{
+    font-size: .8em;
+    margin: 15% 5% ;
+    padding: 0 6%;
+}
+
+button{
+    text-align: center;
+    color:#031A6B;
+    font-weight: 800;
+    padding: 3% 12%;
+    border-radius: 35px;
+    border: 2px solid #031A6B;
+    background-color: transparent;
+    margin: 10% 0 20% 0;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #031A6B;
+    color: white;
+    border: transparent;
+}
